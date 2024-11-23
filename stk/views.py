@@ -32,7 +32,7 @@ def stk_push(request):
             "TransactionDesc" : "Linc Softwares Payment"
 
         }
-        response = request.post(api_url, jsoon=request, headers=headers)
+        response = requests.post(api_url, json=request, headers=headers)
 
         return redirect ('thanks')
 
